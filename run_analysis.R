@@ -14,9 +14,9 @@ e <- read.table("./test/y_test.txt")
 m <- rbind(k, j)
 colnames(m) <- i$V2
 n <- rbind(g, h)
-colnames(n) <- c("subject")
+colnames(n) <- c("Subject")
 o <- rbind(f, e)
-colnames(o) <- c("activity")
+colnames(o) <- c("Activity")
 
 p <- cbind(n, o)
 q <- cbind(m, p)
