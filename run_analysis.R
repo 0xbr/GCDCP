@@ -3,7 +3,7 @@ library(dplyr)
 setwd("..\\UCI HAR Dataset") # Set up working directory
 
 # Collecting pieces
-features <- read.table("features.txt")
+features <- read.table("features.txt"); feat <- as.character(features$V2)
 activity_labels <- read.table("activity_labels.txt")
 
 x_train <- read.table("./train/x_train.txt"); x_test <- read.table("./test/x_test.txt")
@@ -12,7 +12,7 @@ y_train <- read.table("./train/y_train.txt"); y_test <- read.table("./test/y_tes
 
 # rbinding separately x, subject and activity (y)
 # naming the columns of x, subject and y
-x <- rbind(x_train, x_test); colnames(x) <- features$V2
+x <- rbind(x_train, x_test); colnames(x) <- feat
 subject <- rbind(subject_train, subject_test); colnames(subject) <- c("Subject")
 y <- rbind(y_train, y_test); colnames(y) <- c("Activity")
 
