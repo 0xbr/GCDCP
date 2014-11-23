@@ -1,5 +1,4 @@
-# Set up working directory
-setwd(".\\UCI HAR Dataset")
+setwd(".\\UCI HAR Dataset") # Set up working directory
 
 features <- read.table("features.txt")
 
