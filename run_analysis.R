@@ -39,4 +39,4 @@ meltdown <- melt(allD, measure.vars = data_L);
 # Applying the mean function to the merged data
 data_set <- dcast(meltdown, subject + Activity_label ~ variable, mean);
 
-write.table(data_set, "tidy_data_set.txt"); # Writing the result in a txt file
+write.table(data_set, "tidy_data_set.txt", row.name = F); # Writing the result in a txt file
