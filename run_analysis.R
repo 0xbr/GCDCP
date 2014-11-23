@@ -1,3 +1,5 @@
+library(dplyr)
+
 setwd("..\\UCI HAR Dataset") # Set up working directory
 
 # Collecting pieces
