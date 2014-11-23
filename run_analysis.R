@@ -1,7 +1,8 @@
-setwd("...\\UCI HAR Dataset") # Set up working directory (the dots must be replaced by the rest of the directory name)
+setwd("..\\UCI HAR Dataset") # Set up working directory
 
 # Collecting pieces
 features <- read.table("features.txt")
+activity_labels <- read.table("activity_labels.txt")
 
 x_train <- read.table("./train/x_train.txt"); x_test <- read.table("./test/x_test.txt")
 subject_train <- read.table("./train/subject_train.txt"); subject_test <- read.table("./test/subject_test.txt")
